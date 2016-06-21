@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack Demo</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!--link to google fonts for the paragraphs font-->
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500' rel='stylesheet' type='text/css'>
+    <!--put my favicon with link to external website, because the new version of google chrome doesn't support favicons from localhost-->
+    <link rel="shortcut icon" type="image/png" href="http://imagizer.imageshack.us/a/img924/2614/9pmfjx.png">
+</head>
+<body>
+
+    <div id="dealer-cards-div">
+        <div id="top3-Cards-div">
+            <p id="dealer-cards-p">Dealer Cards</p>
+            <canvas id="card1" class="staticCards" width="150" height="220"></canvas>
+            <canvas id="card2" class="staticCards" width="150" height="220"></canvas>
+            <canvas id="card3" class="staticCards" width="150" height="220"></canvas>
+
+            <div id="deck-div">
+                <canvas id="deck" class="staticCards" width="150" height="220"></canvas>
+            </div>
+        </div>
+    </div>
+    <p id="message"></p>
+
+    <div id="player-cards-div">
+        <div id="player-card-A">
+            <canvas id="playerCardA" class="player-cards" width="150" height="220"></canvas>
+        </div>
+        <div id="player-card-B">
+            <canvas id="playerCardB" class="player-cards" width="150" height="220"></canvas>
+        </div>
+
+        <button id="hit-button">HIT</button>
+        <p id="player-cards-p">Player Cards</p>
+    </div>
+
+    <script src="scripts/libs/jquery-3.0.0.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/deal-cards.js"></script>
+    <script src="scripts/check-rank-and-suit.js"></script>
+</body>
+</html>
